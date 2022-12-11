@@ -100,52 +100,52 @@ async def helpCommand(message: types.Message):
     # Reply Hostels
     #SUCCESS
     elif message.text == 'Гуртожиток 1':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/kS4kVeBDCJCf1NuD7", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8288113","24.0175364", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1uDuze4G27t4P_2mqayQJOjpyj_lP50ie/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 3':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/BCraNEtDvzfgKUSt8", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8296352","24.0157652", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/139gRCGvt1vLY_aeKIzA8BMA-WfI_oCLn/view?usp=share_link')
     elif message.text == 'Гуртожиток 4':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/WddWygr2QFQoeMcu6", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8236164","24.0132401", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1MWR7B9uagMc0nPQeCtiCQZy6O2o4VN5S/view?usp=sharing')
     elif message.text == 'Гуртожиток 5':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/gNP8QfDfdnKWAweq7", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8264939","24.0128066", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://media.lpnu.ua/system/files/styles/photo_watermark/private/photo/2017/dec/04/02/gurt08252016082.jpg?itok=t0aPCq9j')
     #SUCCESS
     elif message.text == 'Гуртожиток 7':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/ZA4utEcnfwBggo3aA", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8279839","24.0142475", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1zWXKZPkhGvV0XvV-3TuetA3-CceYPrM0/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 8':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/2y1r1uuiVYpSGK9d9", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8245075","24.0120803", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1rJ6yXd1pQ0oHCl4QNeYdM5gKqSc6Bs1x/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 9':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/B86BPKjg145PGVVi7", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8285511","24.0157886", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1s7TVr_vYRVBlpkp4dMw9Lt9E1I8XYr1B/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 10':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/xALfBX2jrkefvVHWA", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8246399","24.013808", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1JzUvWeQot6_CNPkQSUxqnusyNUo9faTx/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 11':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/ehdJsCiE2ieQP1Vf7", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.825896","24.012377", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1hKqXRtvBM3eKExWDuSo3gdrb89I4o9bS/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 12':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/Dk2wE8FHxCygCB6B9", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8168266","24.0111546", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1ySxjXeKmMr7JQDxtHjZkg2OZQPutYiE2/view?usp=share_link')
     #SUCCESS
     elif message.text == 'Гуртожиток 14':
         await bot.send_location(message.from_user.id,"49.81755065018007", "24.01184216930707")
         await message.answer_photo('https://drive.google.com/file/d/1KzrimieA53wVEaekXutxxFo_0PAJz-lF/view?usp=sharing')
     elif message.text == 'Гуртожиток 15':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/vxpFCjJvuYKZWvqK8", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8178711","24.0131052", reply_markup=nav.hostelsMenu)
         await message.answer_photo('http://photos.wikimapia.org/p/00/02/85/58/90_full.jpg')
     #SUCCESS
     elif message.text == 'Гуртожиток 17':
-        await bot.send_message(message.from_user.id, "Google Maps:https://goo.gl/maps/ZDHgYPthtbfLpeuD6", reply_markup=nav.hostelsMenu)
+        await bot.send_location(message.from_user.id, "49.8003","23.9947877", reply_markup=nav.hostelsMenu)
         await message.answer_photo('https://drive.google.com/file/d/1dP_eBtlf4MGA0IfC51UyRCVYAKW5XpKq/view?usp=share_link')
     elif message.text == 'Головне Меню':
         await bot.send_message(message.from_user.id, """Повертаємося в головне меню!!!""", reply_markup=nav.mainMenu)
