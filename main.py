@@ -194,7 +194,7 @@ async def subject(message: types.Message, state: FSMContext):
     subjects.append(answer_subject)
     
     await bot.send_message(message.from_user.id, 'Введи свій бал...')
-    await TakeScores.next(  )
+    await TakeScores.next()
     
 
 class Error(Exception):
@@ -204,6 +204,8 @@ class ScoreIsGreater(Error):
     pass
 
 class ScoreIsNotInt(Error):
+    pass
+class ScoreIsNotPositive(Error):
     pass
 
 @dp.message_handler(state=TakeScores.scores)
@@ -215,6 +217,8 @@ async def score(message: types.Message, state: FSMContext):
             raise ScoreIsGreater
         elif(answer_score.is_integer == False):
             raise ScoreIsNotInt
+        elif(answer_score < 0):
+            raise ScoreIsNotPositive
         else:
             scores.append(answer_score)
             await bot.send_message(message.from_user.id, 'Введи кількість кредитів для предмету...')
@@ -224,6 +228,8 @@ async def score(message: types.Message, state: FSMContext):
         await TakeScores.scores.set()
     except ScoreIsNotInt:
         await bot.send_message(message.from_user.id, 'Не правильний ввід,введіть ціле число')
+    except ScoreIsNotPositive:
+        await bot.send_message(message.from_user.id, 'Введіть додатнє число.')
     
     
 
@@ -232,12 +238,19 @@ async def score(message: types.Message, state: FSMContext):
 #ввід кредитів за предмет
 async def credit(message: types.Message, state: FSMContext):
     try:
-        answer_credit = int(message.text)
-    except: 
-        await bot.send_message(message.from_user.id, 'Invalid input! You should enter integer number.')
-    credits.append(answer_credit)
-    await bot.send_message(message.from_user.id, 'Продовжимо, чи хочеш побачити результат ?', reply_markup=nav.markup)
-    await TakeScores.next()
+        answer_credit = float(message.text)
+        if(answer_credit.is_integer == False):
+            raise ScoreIsNotInt
+        elif(answer_credit < 0):
+            raise ScoreIsNotPositive
+        else:
+            credits.append(answer_credit)
+            await bot.send_message(message.from_user.id, 'Продовжимо, чи хочеш побачити результат ?', reply_markup=nav.markup)
+            await TakeScores.next()
+    except ScoreIsNotInt: 
+        await bot.send_message(message.from_user.id, 'Неправильний ввід ви маєте ввести ціле число.')
+    except ScoreIsNotPositive:
+        await bot.send_message(message.from_user.id, 'Введіть додатнє число.')
 
 @dp.message_handler(state=TakeScores.alt_step)
 async def process_alt_step(message: types.Message, state: FSMContext):
