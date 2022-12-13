@@ -88,8 +88,7 @@ async def helpCommand(message: types.Message):
     elif message.text == 'Стікери':
         await message.answer_photo("https://drive.google.com/file/d/1ErbsuYBYfW2ujLkA_72pv7xXaOZg21MU/view?usp=share_link")
         await bot.send_message(message.from_user.id, emoji.emojize("""
-    \n<a href="https://t.me/addstickers/iktaexplorer">IKTA Explorer</a> :bomb: 
-    \n:mens:<a href="https://t.me/addstickers/video_gachi">GACHI</a>:mens:   
+    \n<a href="https://t.me/addstickers/iktaexplorer">IKTA Explorer</a> :bomb:  
     \n<a href="https://t.me/addstickers/based_quotes">How_Talk_in_NULP</a> :school_satchel: 
     """, language='alias'),parse_mode="HTML",  reply_markup=nav.mainMenu)
         
