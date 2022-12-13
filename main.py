@@ -89,11 +89,7 @@ async def helpCommand(message: types.Message):
         await message.answer_photo("https://drive.google.com/file/d/1ErbsuYBYfW2ujLkA_72pv7xXaOZg21MU/view?usp=share_link")
         await bot.send_message(message.from_user.id, emoji.emojize("""
     \n<a href="https://t.me/addstickers/iktaexplorer">IKTA Explorer</a> :bomb: 
-    \n<a href="https://t.me/addstickers/LOLITEH">LOLITECH</a> :girl:  
-    \n <a href="https://t.me/addstickers/Cyberbombb"> RNB</a> :boy: 
-    \n:mens:<a href="https://t.me/addstickers/video_gachi">GACHI</a>:mens: 
-    \n<a href="https://t.me/addstickers/KIBERprepoDY">Cyberteachers</a> :computer:  
-    \n<a href="https://t.me/addstickers/cyberfucks">Cyberchildren</a>:baby:  
+    \n:mens:<a href="https://t.me/addstickers/video_gachi">GACHI</a>:mens:   
     \n<a href="https://t.me/addstickers/based_quotes">How_Talk_in_NULP</a> :school_satchel: 
     """, language='alias'),parse_mode="HTML",  reply_markup=nav.mainMenu)
         

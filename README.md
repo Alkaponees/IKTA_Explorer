@@ -8,4 +8,4 @@
 <p>Посилання на соціальні мережі та ресурси НУЛП</p> 
 <br> 
 <h4>Використовуй наш бот з користю:</h4>
-<a href="https://t.me/ICTAExplorer_bot">ICTAExplorer</a>
+<a href="https://t.me/ICTAExplorer_bot">IKTAExplorer</a>
